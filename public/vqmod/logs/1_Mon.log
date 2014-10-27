@@ -1,0 +1,15 @@
+---------- Date: 2014-10-27 16:58:06 ~ IP : ::1 ----------
+REQUEST URI : /docs-assets/ico/favicon.png
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/case3d/public/vqmod/xml/Felipo-Imagen-Pagamento-Entrega.xml
+   id        : Code Market - Imagem Pagamento e Entrega no Checkout
+   version   : 1.0.1
+   vqmver    : 2.3.2
+   author    : Felipo Antonoff Araújo
+VQModObject::parseMods - Could not resolve path for [catalog/model/payment/pagamento_digital.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/model/payment/akatus.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/model/payment/gerencianet.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

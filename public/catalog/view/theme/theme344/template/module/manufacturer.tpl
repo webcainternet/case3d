@@ -1,5 +1,5 @@
-<div class="clear"></div>
-<div class="box man">
+<div class="clear" style="display: none;"></div>
+<div class="box man" style="display: none;">
    <div class="box-man">
     <?php if ($manufacturers) { ?>
     <ul>
