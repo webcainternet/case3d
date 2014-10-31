@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Oct 22, 2014 at 08:02 PM
+-- Generation Time: Oct 31, 2014 at 12:03 PM
 -- Server version: 5.5.34
 -- PHP Version: 5.5.10
 
@@ -256,26 +256,28 @@ CREATE TABLE `oc_banner_image` (
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   PRIMARY KEY (`banner_image_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=376 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=434 ;
 
 --
 -- Dumping data for table `oc_banner_image`
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`) VALUES
-(359, 15, 'index.php?route=product/product&amp;product_id=29', 'data/slide-3.jpg'),
-(375, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-1.jpg'),
-(374, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-1.jpg'),
-(373, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-1.jpg'),
-(358, 15, 'index.php?route=product/product&amp;product_id=28', 'data/slide-1.jpg'),
-(357, 15, 'index.php?route=product/product&amp;product_id=32', 'data/slide-2.jpg'),
+(433, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-5s.png'),
+(432, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-2.jpg'),
+(431, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-4s.png'),
+(388, 15, 'index.php?route=product/product&amp;product_id=28', 'data/slide-3.jpg'),
+(387, 15, 'index.php?route=product/product&amp;product_id=28', 'data/slide-1.jpg'),
 (344, 20, 'index.php?route=product/product&amp;product_id=28', 'data/banner-4.jpg'),
 (348, 21, 'index.php?route=product/product&amp;product_id=28', 'data/banner-5.jpg'),
 (349, 21, 'index.php?route=product/product&amp;product_id=29', 'data/banner-6.jpg'),
 (350, 21, 'index.php?route=product/product&amp;product_id=32', 'data/banner-7.jpg'),
-(372, 16, 'index.php?route=product/product&amp;product_id=29', 'data/banner-2.jpg'),
-(371, 16, 'index.php?route=product/product&amp;product_id=32', 'data/banner-3.jpg'),
-(370, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-2.jpg');
+(430, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-s2.png'),
+(429, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-s4mini.png'),
+(428, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-s3mini.png'),
+(427, 16, 'index.php?route=product/product&amp;product_id=28', 'data/banner-s4.png'),
+(426, 16, 'index.php?route=product/product&amp;product_id=29', 'data/banner-s3.png'),
+(425, 16, 'index.php?route=product/product&amp;product_id=32', 'data/banner-3gs.png');
 
 -- --------------------------------------------------------
 
@@ -297,15 +299,17 @@ CREATE TABLE `oc_banner_image_description` (
 --
 
 INSERT INTO `oc_banner_image_description` (`banner_image_id`, `language_id`, `banner_id`, `title`, `description`) VALUES
-(374, 8, 16, 'banner-5', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b67616c617879207334266c743b2f68322667743b0d0a266c743b7370616e2667743b53484f50204e4f5721266c743b2f7370616e2667743b),
-(375, 8, 16, 'banner-6', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b67616c617879207334266c743b2f68322667743b0d0a266c743b7370616e2667743b53484f50204e4f5721266c743b2f7370616e2667743b),
-(371, 8, 16, 'banner-1', 0x266c743b68312667743b4e6f6b6961266c743b2f68312667743b0d0a266c743b68322667743b6c756d69612031303230266c743b2f68322667743b0d0a266c743b7370616e2667743b53484f50204e4f5721266c743b2f7370616e2667743b),
-(372, 8, 16, 'banner-2', 0x266c743b68312667743b6170706c65266c743b2f68312667743b0d0a266c743b68322667743b6970686f6e65203563266c743b2f68322667743b0d0a266c743b7370616e2667743b53484f50204e4f5721266c743b2f7370616e2667743b),
-(373, 8, 16, 'banner-3', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b67616c617879207334266c743b2f68322667743b0d0a266c743b7370616e2667743b53484f50204e4f5721266c743b2f7370616e2667743b),
-(359, 8, 15, 'slide-2', 0x266c743b68312667743b485443266c743b2f68312667743b0d0a266c743b68322667743b4f4e45204d4158266c743b2f68322667743b0d0a266c743b702667743b446f7669746165206469616d207075727573206c756374757320666163696c697369732e204e756c6c616d20617420697073756d2065726f73207472697320746971756520756c74726963652e2044756973207175697320696d70657264696520646f6c6f72652065737420536564206c6f626f7274697320756c74726963657320616c69717565742e205072616573656e742074656c6c75732073617069656e2c20696d70657264696574206e65632e20446f766974616520646961207075727573206c756374757320666163696c697369732e20266c743b2f702667743b0d0a266c743b68332667743b5374617274696e672046726f6d3a266c743b7370616e2667743b20243635302e3939266c743b2f7370616e2667743b266c743b2f68332667743b0d0a266c743b6120687265663d2671756f743b696e6465782e7068703f726f7574653d70726f647563742f70726f6475637426616d703b70726f647563745f69643d32392671756f743b2667743b53484f50204e4f5721266c743b2f612667743b),
-(358, 8, 15, 'slide-1', 0x266c743b68312667743b4170706c65266c743b2f68312667743b0d0a266c743b68322667743b6950686f6e65203553266c743b2f68322667743b0d0a266c743b702667743b446f7669746165206469616d207075727573206c756374757320666163696c697369732e204e756c6c616d20617420697073756d2065726f73207472697320746971756520756c74726963652e2044756973207175697320696d70657264696520646f6c6f72652065737420536564206c6f626f7274697320756c74726963657320616c69717565742e205072616573656e742074656c6c75732073617069656e2c20696d70657264696574206e65632e20446f766974616520646961207075727573206c756374757320666163696c697369732e20266c743b2f702667743b0d0a266c743b68332667743b5374617274696e672046726f6d3a266c743b7370616e2667743b20243439392e3939266c743b2f7370616e2667743b266c743b2f68332667743b0d0a266c743b6120687265663d2671756f743b696e6465782e7068703f726f7574653d70726f647563742f70726f6475637426616d703b70726f647563745f69643d32382671756f743b2667743b53484f50204e4f5721266c743b2f612667743b),
-(370, 8, 16, 'banner-4', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b67616c617879207334266c743b2f68322667743b0d0a266c743b7370616e2667743b53484f50204e4f5721266c743b2f7370616e2667743b),
-(357, 8, 15, 'slide-3', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b47414c415859204e4f54452033266c743b2f68322667743b0d0a266c743b702667743b446f7669746165206469616d207075727573206c756374757320666163696c697369732e204e756c6c616d20617420697073756d2065726f73207472697320746971756520756c74726963652e2044756973207175697320696d70657264696520646f6c6f72652065737420536564206c6f626f7274697320756c74726963657320616c69717565742e205072616573656e742074656c6c75732073617069656e2c20696d70657264696574206e65632e20446f766974616520646961207075727573206c756374757320666163696c697369732e20266c743b2f702667743b0d0a266c743b68332667743b5374617274696e672046726f6d3a266c743b7370616e2667743b20243539392e3939266c743b2f7370616e2667743b266c743b2f68332667743b0d0a266c743b6120687265663d2671756f743b696e6465782e7068703f726f7574653d70726f647563742f70726f6475637426616d703b70726f647563745f69643d33322671756f743b2667743b53484f50204e4f5721266c743b2f612667743b),
+(433, 8, 16, 'banner-9', 0x266c743b68312667743b4170706c65266c743b2f68312667743b0d0a266c743b68322667743b4970686f6e6520352f3553266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(432, 8, 16, 'banner-8', 0x266c743b68312667743b4170706c65266c743b2f68312667743b0d0a266c743b68322667743b4970686f6e65203543266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(431, 8, 16, 'banner-4', 0x266c743b68312667743b4170706c65266c743b2f68312667743b0d0a266c743b68322667743b4970686f6e6520342f3453266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(430, 8, 16, 'banner-7', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b47616c617879205332266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(429, 8, 16, 'banner-6', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b47616c617879205334204d696e69266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(425, 8, 16, 'banner-1', 0x266c743b68312667743b4170706c65266c743b2f68312667743b0d0a266c743b68322667743b4970686f6e6520334753266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(426, 8, 16, 'banner-2', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b47616c617879205333266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(427, 8, 16, 'banner-3', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b47616c617879205334266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(428, 8, 16, 'banner-5', 0x266c743b68312667743b53616d73756e67266c743b2f68312667743b0d0a266c743b68322667743b47616c617879205333204d696e69266c743b2f68322667743b0d0a266c743b7370616e2667743b435249415220434150494e4841266c743b2f7370616e2667743b),
+(387, 8, 15, 'slide-1', 0x266c743b68312667743b437573746f6d697a6521266c743b2f68312667743b0d0a266c743b68322667743b566f63c3aa206e6120636170696e686120646f207365752063656c756c617221266c743b2f68322667743b0d0a266c743b702667743b446f7669746165206469616d207075727573206c756374757320666163696c697369732e204e756c6c616d20617420697073756d2065726f73207472697320746971756520756c74726963652e2044756973207175697320696d70657264696520646f6c6f72652065737420536564206c6f626f7274697320756c74726963657320616c69717565742e205072616573656e742074656c6c75732073617069656e2c20696d70657264696574206e65632e20446f766974616520646961207075727573206c756374757320666163696c697369732e20266c743b2f702667743b0d0a266c743b68332667743b6170656e61733a266c743b7370616e2667743b2052242036392c3930266c743b2f7370616e2667743b266c743b2f68332667743b0d0a266c743b6120687265663d2671756f743b696e6465782e7068703f726f7574653d70726f647563742f70726f6475637426616d703b70726f647563745f69643d32382671756f743b2667743b435249415220434150494e484121266c743b2f612667743b),
+(388, 8, 15, 'slide-2', 0x266c743b68312667743b437573746f6d697a6521266c743b2f68312667743b0d0a266c743b68322667743b566f63c3aa206e6120636170696e686120646f207365752063656c756c617221266c743b2f68322667743b0d0a266c743b702667743b446f7669746165206469616d207075727573206c756374757320666163696c697369732e204e756c6c616d20617420697073756d2065726f73207472697320746971756520756c74726963652e2044756973207175697320696d70657264696520646f6c6f72652065737420536564206c6f626f7274697320756c74726963657320616c69717565742e205072616573656e742074656c6c75732073617069656e2c20696d70657264696574206e65632e20446f766974616520646961207075727573206c756374757320666163696c697369732e20266c743b2f702667743b0d0a266c743b68332667743b6170656e61733a266c743b7370616e2667743b2052242036392c3930266c743b2f7370616e2667743b266c743b2f68332667743b0d0a266c743b6120687265663d2671756f743b696e6465782e7068703f726f7574653d70726f647563742f70726f6475637426616d703b70726f647563745f69643d32382671756f743b2667743b435249415220434150494e484121266c743b2f612667743b),
 (344, 8, 20, 'banner-content', ''),
 (348, 8, 21, 'banner-5', ''),
 (349, 8, 21, 'banner-6', ''),
@@ -932,7 +936,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2014-10-22 18:47:56');
+(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2014-10-31 10:47:46');
 
 -- --------------------------------------------------------
 
@@ -1248,12 +1252,10 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (57, 'total', 'sub_total'),
 (58, 'total', 'tax'),
 (59, 'total', 'total'),
-(468, 'module', 'latest'),
 (390, 'total', 'credit'),
 (349, 'total', 'handling'),
 (350, 'total', 'low_order_fee'),
 (389, 'total', 'coupon'),
-(445, 'module', 'filter'),
 (464, 'module', 'account'),
 (393, 'total', 'reward'),
 (398, 'total', 'voucher'),
@@ -1261,12 +1263,8 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (492, 'shipping', 'correios'),
 (440, 'module', 'banner'),
 (467, 'module', 'information'),
-(465, 'module', 'affiliate'),
-(466, 'module', 'bestseller'),
 (456, 'module', 'newcarousel'),
-(449, 'module', 'special'),
 (481, 'shipping', 'free'),
-(487, 'module', 'compare'),
 (485, 'module', 'manufacturer');
 
 -- --------------------------------------------------------
@@ -2205,31 +2203,6 @@ CREATE TABLE `oc_product` (
   PRIMARY KEY (`product_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=50 ;
 
---
--- Dumping data for table `oc_product`
---
-
-INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `date_added`, `date_modified`, `viewed`) VALUES
-(28, 'Product 1', '', '', '', '', '', '', '', 930, 7, 'data/product-49.png', 11, 1, 100.0000, 200, 9, '2009-02-03', 146.40000000, 2, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:06:50', '2013-11-26 16:53:58', 5),
-(29, 'Product 2', '', '', '', '', '', '', '', 996, 6, 'data/product-07.png', 6, 1, 279.9900, 0, 9, '2009-02-03', 133.00000000, 2, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 16:42:17', '2013-11-26 16:45:30', 0),
-(30, 'Product 3', '', '', '', '', '', '', '', 699, 6, 'data/product-46.png', 9, 1, 100.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:59:00', '2013-11-26 16:53:28', 0),
-(31, 'Product 4', '', '', '', '', '', '', '', 999, 6, 'data/product-13.png', 5, 1, 80.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2013-11-26 16:46:40', 0),
-(32, 'Product 5', '', '', '', '', '', '', '', 999, 6, 'data/product-04.png', 5, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 17:07:26', '2013-11-26 16:44:52', 0),
-(33, 'Product 6', '', '', '', '', '', '', '', 984, 6, 'data/product-19.png', 11, 1, 200.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 17:08:31', '2013-11-26 16:47:46', 0),
-(34, 'Product 7', '', '', '', '', '', '', '', 1000, 6, 'data/product-31.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 18:07:54', '2013-11-26 16:50:28', 0),
-(35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, 'data/product-22.png', 12, 0, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 18:08:31', '2013-11-26 16:48:13', 0),
-(36, 'Product 9', '', '', '', '', '', '', '', 980, 6, 'data/product-16.png', 11, 0, 100.0000, 100, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 18:09:19', '2013-11-26 16:47:13', 0),
-(40, 'product 11', '', '', '', '', '', '', '', 972, 5, 'data/product-34.png', 8, 1, 101.0000, 0, 9, '2009-02-03', 10.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 21:07:12', '2013-11-26 16:51:04', 0),
-(41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'data/product-28.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 21:07:26', '2014-01-11 19:20:40', 0),
-(42, 'Product 15', '', '', '', '', '', '', '', 986, 5, 'data/product-43.png', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, '2009-02-03 21:07:37', '2013-11-26 16:52:54', 0),
-(43, 'Product 16', '', '', '', '', '', '', '', 900, 5, 'data/product-01.png', 8, 0, 500.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:07:49', '2013-11-26 16:43:03', 0),
-(44, 'Product 17', '', '', '', '', '', '', '', 999, 5, 'data/product-40.png', 12, 1, 1000.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:00', '2013-11-26 16:52:08', 0),
-(45, 'Product 18', '', '', '', '', '', '', '', 993, 5, 'data/product-10.png', 8, 1, 200.0000, 0, 0, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:17', '2013-11-26 16:45:59', 0),
-(46, 'Product 19', '', '', '', '', '', '', '', 999, 5, 'data/product-25.png', 6, 1, 1000.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:29', '2014-01-11 13:39:59', 0),
-(47, 'Product 21', 'sdd', '4578789', '46498', '49894654', '549564', '4684645', '', 1000, 5, 'data/product-37.png', 7, 1, 100.0000, 400, 9, '2009-02-03', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2013-11-26 16:51:36', 0),
-(48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 994, 5, 'data/product-55.png', 8, 1, 100.0000, 0, 9, '2009-02-08', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-08 17:21:51', '2013-11-27 11:18:49', 0),
-(49, 'SAM1', '', '', '', '', '', '', '', 996, 8, 'data/product-52.png', 0, 1, 199.9900, 0, 9, '2011-04-25', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2011-04-26 08:57:34', '2013-11-26 16:54:35', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -2243,17 +2216,6 @@ CREATE TABLE `oc_product_attribute` (
   `text` text NOT NULL,
   PRIMARY KEY (`product_id`,`attribute_id`,`language_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_attribute`
---
-
-INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
-(43, 4, 8, '8gb'),
-(47, 4, 8, '16GB'),
-(43, 2, 8, '1'),
-(42, 3, 8, '100mhz'),
-(47, 2, 8, '4');
 
 -- --------------------------------------------------------
 
@@ -2272,31 +2234,6 @@ CREATE TABLE `oc_product_description` (
   PRIMARY KEY (`product_id`,`language_id`),
   KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_description`
---
-
-INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `tag`) VALUES
-(46, 8, 'Esse cillum dolore', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(41, 8, 'Gyllamn sticb', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(34, 8, 'Incididunt ut', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(30, 8, 'Lorem ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(29, 8, 'Aperce sit conse', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(45, 8, 'Dolor sit amet', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(31, 8, 'Dolor sit amet conse', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(33, 8, 'Ecco enswom sucaal Ecco enswom sucaal', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(43, 8, 'Acicte magna ipsum dolor', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', 'lorem, ipsum, dolore'),
-(32, 8, 'amet dolor sit', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(40, 8, 'Ipsum dolor', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(35, 8, 'Eiusmod tempor', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(42, 8, 'Lorem ipsum dolor sit', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n', '', '', ''),
-(36, 8, 'Ecco enswom sucaal', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(47, 8, 'Ipsum dolor conse', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(49, 8, 'Mfgna set dolor sit amet', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(28, 8, 'Magna aliqua tation ullamcorper', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(44, 8, 'ISpsum dolor sit amet', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', ''),
-(48, 8, 'Ut labore et Ut labore et', '&lt;p&gt;&lt;strong&gt;The main reason&lt;/strong&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;/p&gt;\r\n\r\n&lt;p&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements.&lt;/p&gt;\r\n', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -2317,15 +2254,6 @@ CREATE TABLE `oc_product_discount` (
   KEY `product_id` (`product_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=468 ;
 
---
--- Dumping data for table `oc_product_discount`
---
-
-INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(467, 42, 1, 30, 1, 66.0000, '0000-00-00', '0000-00-00'),
-(466, 42, 1, 20, 1, 77.0000, '0000-00-00', '0000-00-00'),
-(465, 42, 1, 10, 1, 88.0000, '0000-00-00', '0000-00-00');
-
 -- --------------------------------------------------------
 
 --
@@ -2337,51 +2265,6 @@ CREATE TABLE `oc_product_filter` (
   `filter_id` int(11) NOT NULL,
   PRIMARY KEY (`product_id`,`filter_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_filter`
---
-
-INSERT INTO `oc_product_filter` (`product_id`, `filter_id`) VALUES
-(28, 1),
-(28, 3),
-(28, 4),
-(29, 1),
-(29, 2),
-(29, 3),
-(29, 4),
-(30, 1),
-(30, 2),
-(30, 3),
-(30, 4),
-(31, 3),
-(31, 4),
-(32, 1),
-(32, 2),
-(32, 4),
-(40, 1),
-(40, 3),
-(40, 4),
-(42, 1),
-(42, 3),
-(42, 4),
-(43, 1),
-(43, 2),
-(43, 3),
-(43, 4),
-(44, 1),
-(44, 3),
-(44, 4),
-(45, 1),
-(45, 2),
-(45, 3),
-(45, 4),
-(48, 1),
-(48, 3),
-(48, 4),
-(49, 1),
-(49, 3),
-(49, 4);
 
 -- --------------------------------------------------------
 
@@ -2397,67 +2280,6 @@ CREATE TABLE `oc_product_image` (
   PRIMARY KEY (`product_image_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2792 ;
 
---
--- Dumping data for table `oc_product_image`
---
-
-INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(2777, 28, 'data/product-49.png', 0),
-(2766, 44, 'data/product-40.png', 0),
-(2738, 45, 'data/product-12.png', 0),
-(2741, 31, 'data/product-13.png', 0),
-(2736, 29, 'data/product-07.png', 0),
-(2788, 46, 'data/product-26.png', 0),
-(2774, 30, 'data/product-48.png', 0),
-(2776, 28, 'data/product-51.png', 0),
-(2791, 41, 'data/product-29.png', 0),
-(2760, 40, 'data/product-34.png', 0),
-(2785, 48, 'data/product-57.png', 0),
-(2743, 36, 'data/product-18.png', 0),
-(2742, 36, 'data/product-17.png', 0),
-(2755, 34, 'data/product-32.png', 0),
-(2756, 34, 'data/product-33.png', 0),
-(2757, 34, 'data/product-31.png', 0),
-(2730, 43, 'data/product-01.png', 0),
-(2765, 44, 'data/product-42.png', 0),
-(2737, 45, 'data/product-11.png', 0),
-(2740, 31, 'data/product-15.png', 0),
-(2739, 31, 'data/product-14.png', 0),
-(2735, 29, 'data/product-09.png', 0),
-(2787, 46, 'data/product-27.png', 0),
-(2786, 46, 'data/product-25.png', 0),
-(2780, 49, 'data/product-52.png', 0),
-(2779, 49, 'data/product-54.png', 0),
-(2778, 49, 'data/product-53.png', 0),
-(2771, 42, 'data/product-45.png', 0),
-(2729, 43, 'data/product-03.png', 0),
-(2728, 43, 'data/product-02.png', 0),
-(2734, 29, 'data/product-08.png', 0),
-(2746, 33, 'data/product-19.png', 0),
-(2745, 33, 'data/product-21.png', 0),
-(2744, 33, 'data/product-20.png', 0),
-(2748, 35, 'data/product-24.png', 0),
-(2747, 35, 'data/product-23.png', 0),
-(2790, 41, 'data/product-30.png', 0),
-(2789, 41, 'data/product-28.png', 0),
-(2773, 30, 'data/product-47.png', 0),
-(2772, 30, 'data/product-46.png', 0),
-(2733, 32, 'data/product-04.png', 0),
-(2732, 32, 'data/product-06.png', 0),
-(2731, 32, 'data/product-05.png', 0),
-(2784, 48, 'data/product-56.png', 0),
-(2775, 28, 'data/product-50.png', 0),
-(2770, 42, 'data/product-44.png', 0),
-(2769, 42, 'data/product-43.png', 0),
-(2763, 47, 'data/product-37.png', 0),
-(2762, 47, 'data/product-39.png', 0),
-(2759, 40, 'data/product-36.png', 0),
-(2758, 40, 'data/product-35.png', 0),
-(2764, 44, 'data/product-41.png', 0),
-(2761, 47, 'data/product-38.png', 0),
-(2768, 42, 'data/product-45.png', 0),
-(2767, 42, 'data/product-44.png', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -2472,16 +2294,6 @@ CREATE TABLE `oc_product_option` (
   `required` tinyint(1) NOT NULL,
   PRIMARY KEY (`product_option_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=227 ;
-
---
--- Dumping data for table `oc_product_option`
---
-
-INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `option_value`, `required`) VALUES
-(224, 35, 11, '', 1),
-(225, 47, 12, '2011-04-22', 1),
-(226, 30, 5, '', 1),
-(217, 42, 5, '', 1);
 
 -- --------------------------------------------------------
 
@@ -2505,21 +2317,6 @@ CREATE TABLE `oc_product_option_value` (
   `weight_prefix` varchar(1) NOT NULL,
   PRIMARY KEY (`product_option_value_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
-
---
--- Dumping data for table `oc_product_option_value`
---
-
-INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(2, 217, 42, 5, 42, 200, 1, 2.0000, '+', 0, '+', 2.00000000, '+'),
-(1, 217, 42, 5, 41, 100, 0, 1.0000, '+', 0, '+', 1.00000000, '+'),
-(13, 224, 35, 11, 47, 10, 1, 10.0000, '+', 0, '+', 0.00000000, '+'),
-(15, 226, 30, 5, 39, 1, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
-(16, 226, 30, 5, 40, 5, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
-(3, 217, 42, 5, 40, 300, 0, 3.0000, '+', 0, '+', 3.00000000, '+'),
-(4, 217, 42, 5, 39, 88, 1, 4.0000, '+', 0, '+', 4.00000000, '+'),
-(12, 224, 35, 11, 46, 0, 1, 5.0000, '+', 0, '+', 0.00000000, '+'),
-(14, 224, 35, 11, 48, 15, 1, 15.0000, '+', 0, '+', 0.00000000, '+');
 
 -- --------------------------------------------------------
 
@@ -2558,30 +2355,6 @@ CREATE TABLE `oc_product_related` (
   PRIMARY KEY (`product_id`,`related_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_related`
---
-
-INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
-(29, 42),
-(29, 43),
-(31, 43),
-(32, 43),
-(40, 42),
-(41, 42),
-(42, 29),
-(42, 40),
-(42, 41),
-(42, 42),
-(42, 45),
-(43, 29),
-(43, 31),
-(43, 32),
-(43, 43),
-(43, 45),
-(45, 42),
-(45, 43);
-
 -- --------------------------------------------------------
 
 --
@@ -2595,31 +2368,6 @@ CREATE TABLE `oc_product_reward` (
   `points` int(8) NOT NULL DEFAULT '0',
   PRIMARY KEY (`product_reward_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=673 ;
-
---
--- Dumping data for table `oc_product_reward`
---
-
-INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(664, 42, 1, 100),
-(662, 47, 1, 300),
-(666, 28, 1, 400),
-(650, 43, 1, 600),
-(652, 29, 1, 0),
-(670, 48, 1, 0),
-(661, 40, 1, 0),
-(665, 30, 1, 200),
-(663, 44, 1, 700),
-(653, 45, 1, 800),
-(654, 31, 1, 0),
-(657, 35, 1, 0),
-(656, 33, 1, 0),
-(671, 46, 1, 0),
-(672, 41, 1, 0),
-(655, 36, 1, 0),
-(660, 34, 1, 0),
-(651, 32, 1, 0),
-(667, 49, 1, 1000);
 
 -- --------------------------------------------------------
 
@@ -2639,21 +2387,6 @@ CREATE TABLE `oc_product_special` (
   KEY `product_id` (`product_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=497 ;
 
---
--- Dumping data for table `oc_product_special`
---
-
-INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(492, 42, 1, 1, 90.0000, '0000-00-00', '0000-00-00'),
-(494, 30, 1, 2, 90.0000, '0000-00-00', '0000-00-00'),
-(493, 30, 1, 1, 80.0000, '0000-00-00', '0000-00-00'),
-(488, 45, 1, 0, 199.0000, '0000-00-00', '0000-00-00'),
-(496, 41, 1, 0, 99.0000, '0000-00-00', '0000-00-00'),
-(491, 40, 1, 0, 99.0000, '0000-00-00', '0000-00-00'),
-(495, 49, 1, 0, 190.0000, '0000-00-00', '0000-00-00'),
-(487, 43, 1, 0, 499.0000, '0000-00-00', '0000-00-00'),
-(489, 31, 1, 0, 73.0000, '0000-00-00', '0000-00-00');
-
 -- --------------------------------------------------------
 
 --
@@ -2665,72 +2398,6 @@ CREATE TABLE `oc_product_to_category` (
   `category_id` int(11) NOT NULL,
   PRIMARY KEY (`product_id`,`category_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_to_category`
---
-
-INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(28, 20),
-(28, 24),
-(28, 25),
-(28, 29),
-(28, 30),
-(28, 32),
-(28, 57),
-(29, 20),
-(29, 24),
-(29, 29),
-(29, 30),
-(29, 36),
-(29, 57),
-(30, 20),
-(33, 17),
-(33, 20),
-(33, 28),
-(33, 29),
-(33, 32),
-(33, 35),
-(35, 20),
-(36, 25),
-(36, 29),
-(36, 32),
-(36, 35),
-(36, 57),
-(40, 20),
-(40, 24),
-(42, 20),
-(42, 28),
-(42, 59),
-(43, 17),
-(43, 20),
-(43, 30),
-(43, 31),
-(43, 35),
-(44, 17),
-(44, 20),
-(44, 28),
-(44, 35),
-(44, 36),
-(44, 57),
-(45, 17),
-(45, 20),
-(45, 25),
-(45, 28),
-(45, 29),
-(45, 32),
-(46, 20),
-(47, 20),
-(47, 59),
-(48, 20),
-(48, 28),
-(48, 29),
-(48, 31),
-(48, 32),
-(48, 35),
-(48, 36),
-(49, 57),
-(49, 59);
 
 -- --------------------------------------------------------
 
@@ -2768,31 +2435,6 @@ CREATE TABLE `oc_product_to_store` (
   `store_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`product_id`,`store_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_to_store`
---
-
-INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(32, 0),
-(33, 0),
-(34, 0),
-(35, 0),
-(36, 0),
-(40, 0),
-(41, 0),
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0);
 
 -- --------------------------------------------------------
 
@@ -3009,14 +2651,10 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (53, 0, 'reward', 'reward_sort_order', '2', 0),
 (54, 0, 'reward', 'reward_status', '1', 0),
 (4584, 0, 'account', 'account_module', 'a:7:{i:0;a:4:{s:9:"layout_id";s:1:"6";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:1;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:2;a:4:{s:9:"layout_id";s:2:"11";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:3;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:4;a:4:{s:9:"layout_id";s:1:"9";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:5;a:4:{s:9:"layout_id";s:1:"7";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:6;a:4:{s:9:"layout_id";s:1:"8";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
-(4691, 0, 'special', 'special_module', 'a:1:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"3";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (5343, 0, 'config', 'config_maintenance', '0', 0),
-(4567, 0, 'compare', 'compare_module', 'a:2:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:1;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (94, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (95, 0, 'voucher', 'voucher_status', '1', 0),
 (5351, 0, 'pagseguro', 'pagseguro_token', '254C2B1E56C8477F857EC17A333BD0DB', 0),
-(4353, 0, 'affiliate', 'affiliate_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(4134, 0, 'filter', 'filter_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (3579, 0, 'information', 'information_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
 (5345, 0, 'config', 'config_encryption', '600485ea952f2ebb76fae2266bf713c0', 0),
 (5346, 0, 'config', 'config_compression', '0', 0),
@@ -3063,8 +2701,6 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (3050, 0, 'free', 'free_status', '0', 0),
 (3049, 0, 'free', 'free_geo_zone_id', '0', 0),
 (3048, 0, 'free', 'free_total', '', 0),
-(4565, 0, 'bestseller', 'bestseller_module', 'a:4:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"3";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:1;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"4";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:2;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"2";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:3;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"8";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(4570, 0, 'latest', 'latest_module', 'a:4:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"3";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:1;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"4";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:2;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"9";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:3;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"2";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (5307, 0, 'config', 'config_image_additional_width', '70', 0),
 (5306, 0, 'config', 'config_image_product_height', '180', 0),
 (5305, 0, 'config', 'config_image_product_width', '180', 0),
@@ -3299,13 +2935,11 @@ CREATE TABLE `oc_url_alias` (
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
-(787, 'product_id=48', 'ipod_classic'),
 (788, 'category_id=20', 'desktops'),
 (503, 'category_id=26', 'pc'),
 (505, 'category_id=27', 'mac'),
 (789, 'manufacturer_id=8', 'apple'),
 (790, 'information_id=4', 'about_us'),
-(783, 'product_id=42', 'test'),
 (767, 'category_id=34', 'mp3-players'),
 (785, 'category_id=36', 'Normal');
 

@@ -73,7 +73,7 @@
 				<h3>Formas de pagamento</h3>
 				<ul>
 					<li>
-					<img src="">
+					<img src="/image/data/footer-pagseguro-onlyband.png">
 					</li>
 				</ul>
 			</div>
@@ -84,7 +84,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+					<?php echo $powered; ?> - Desenvolvido por <a href="http://www.webca.com.br/" target="_blank">WebCA Internet</a><!-- [[%FOOTER_LINK]] -->
 				</div>
 			</div>
 		</div>
