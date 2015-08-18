@@ -17,8 +17,8 @@ ini_set("memory_limit","128M");
 
 
 	//Corrigir problema SSL
-	$gimagem = str_replace('https://www.capasparaiphone.com.br','http://www.capasparaiphone.com.br', $gimagem);
-	$gimagem = str_replace('https://capasparaiphone.com.br','http://capasparaiphone.com.br', $gimagem);
+	$gimagem = str_replace('https://www.case3d.com.br','http://www.case3d.com.br', $gimagem);
+	$gimagem = str_replace('https://case3d.com.br','http://case3d.com.br', $gimagem);
 
         //Recebe imagem do cliente
         $clienteimagem = $gimagem;
@@ -51,7 +51,7 @@ ini_set("memory_limit","128M");
         fclose($savefile);
 
         //Descobre o tipo da imagem
-        $imagemtipo = exif_imagetype('/var/www/capasparaiphone.com.br/capasparaiphone/public/app/'.$novoarq.'.tmp');
+        $imagemtipo = exif_imagetype('/var/www/case3d.com.br/case3d/public/app/'.$novoarq.'.tmp');
 
         switch ($imagemtipo) {
             case 1:
@@ -100,7 +100,7 @@ $sql_statement0 = "REPLACE INTO cpi_capasconstrucao_girar (idsession, posicao, a
 
 $result0 = mysql_query($sql_statement0,$dblink);
 
-$sql_statement = "INSERT INTO  `capasparaiphone`.`cpi_capasconstrucao` (
+$sql_statement = "INSERT INTO  `case3d`.`cpi_capasconstrucao` (
 `idcsession` ,
 `modelo` ,
 `layout` ,
@@ -112,7 +112,7 @@ $sql_statement = "INSERT INTO  `capasparaiphone`.`cpi_capasconstrucao` (
 `ntop`
 )
 VALUES (
-'$gidcsession',  '$gmodelo',  '$glayout',  '$gposicao',  'https://www.capasparaiphone.com.br/app/$gimagem2',  '$qnheight',  '$qnwidth',  '$qnleft',  '$qntop'
+'$gidcsession',  '$gmodelo',  '$glayout',  '$gposicao',  'https://www.case3d.com.br/app/$gimagem2',  '$qnheight',  '$qnwidth',  '$qnleft',  '$qntop'
 )
 ";
 
@@ -123,7 +123,7 @@ if (!$result) {
 }
 else {
     ?>
-        <img src="https://www.capasparaiphone.com.br/app/<?php echo "$novoarq"; ?>.png">
+        <img src="https://www.case3d.com.br/app/<?php echo "$novoarq"; ?>.png">
 
 <?php } ?>
 

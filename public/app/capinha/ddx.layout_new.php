@@ -9,7 +9,7 @@
 <?php //Layout 1 Foto
     if ($layout == 0) { ?>
         <div class="bordapontilhada">
-            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.capasparaiphone.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.case3d.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 
                 <!-- Tabela -->
                 <table style="margin: 0px; padding: 0px; border: 0px;" cellpadding="0" cellspacing="0">
@@ -68,7 +68,7 @@
 <?php //Layout 2 Foto
     if ($layout == 1) { ?>
         <div class="bordapontilhada">
-            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.capasparaiphone.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.case3d.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 
                 <!-- Tabela -->
                 <table style="margin: 0px; padding: 0px; border: 0px;" cellpadding="0" cellspacing="0">
@@ -152,7 +152,7 @@
 <?php //Layout 6 Foto
     if ($layout == 2) { ?>
         <div class="bordapontilhada">
-            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.capasparaiphone.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.case3d.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 
                 <!-- Tabela -->
                 <table style="margin: 0px; padding: 0px; border: 0px;" cellpadding="0" cellspacing="0">
@@ -216,7 +216,7 @@
 <?php //Layout 8 Foto
     if ($layout == 3) { ?>
         <div class="bordapontilhada">
-            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.capasparaiphone.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+            <div id="divmask" style="padding: 0px; height: <?php echo $alturatotal; ?>px; width: <?php echo $larguratotal; ?>px; margin-left: 0px; background-image: url(https://www.case3d.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 
                 <!-- Tabela -->
                 <table style="margin: 0px; padding: 0px; border: 0px;" cellpadding="0" cellspacing="0">
@@ -290,21 +290,21 @@
 
 <!-- invisible iframes -->
 <div style="display: none;">
-    <iframe id="invfr1"  name="invfr1"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr2"  name="invfr2"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr3"  name="invfr3"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr4"  name="invfr4"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr5"  name="invfr5"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr6"  name="invfr6"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr7"  name="invfr7"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr8"  name="invfr8"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr9"  name="invfr9"  src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr10" name="invfr10" src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr11" name="invfr11" src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr12" name="invfr12" src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr13" name="invfr13" src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr14" name="invfr14" src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
-    <iframe id="invfr15" name="invfr15" src="https://www.capasparaiphone.com.br/capasparaiphone/2/blank.html"></iframe>
+    <iframe id="invfr1"  name="invfr1"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr2"  name="invfr2"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr3"  name="invfr3"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr4"  name="invfr4"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr5"  name="invfr5"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr6"  name="invfr6"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr7"  name="invfr7"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr8"  name="invfr8"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr9"  name="invfr9"  src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr10" name="invfr10" src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr11" name="invfr11" src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr12" name="invfr12" src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr13" name="invfr13" src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr14" name="invfr14" src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
+    <iframe id="invfr15" name="invfr15" src="https://www.case3d.com.br/case3d/2/blank.html"></iframe>
 </div>
 
 

@@ -32,14 +32,14 @@ else {*/
 	<script src="/app/js/1.8.jquery-ui.min.js" type="text/javascript"></script>
 
 
-	<!-- capasparaiphone -->
+	<!-- case3d -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="js/acordion.js"></script>
 	<script src="js/montacapa.js"></script>
 	<script src="js/montapreview.js"></script>
 
 	<!-- upload -->
-	<script type="text/javascript" src="/capasparaiphone/4/scripts/jquery.wallform.js"></script>
+	<script type="text/javascript" src="/case3d/4/scripts/jquery.wallform.js"></script>
 	<script type="text/javascript" >
 	  $(document).ready(function() { 
         $('#photoimg').die('click').live('change', function()			{ 
@@ -84,7 +84,7 @@ else {*/
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "https://www.capasparaiphone.com.br/capasparaiphoneapp/1/index2.php",
+	            url: "https://www.case3d.com.br/case3dapp/1/index2.php",
 	            async: false,
 	            success : function(text)
 	            {
@@ -104,7 +104,7 @@ else {*/
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "https://www.capasparaiphone.com.br/capasparaiphoneapp/2/index.php?idalbum="+albumid,
+	            url: "https://www.case3d.com.br/case3dapp/2/index.php?idalbum="+albumid,
 	            async: false,
 	            success : function(text)
 	            {
@@ -131,7 +131,7 @@ else {*/
 
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "https://www.capasparaiphone.com.br/instagramcpiapp/instagram/home2.php",
+	            url: "https://www.case3d.com.br/instagramcdapp/instagram/home2.php",
 	            async: false,
 	            success : function(text)
 	            {

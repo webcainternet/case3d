@@ -1,5 +1,5 @@
 <?php
-$mysql_hostname = "www.capasparaiphone.com.br";
+$mysql_hostname = "www.case3d.com.br";
 $mysql_user = "username";
 $mysql_password = "password";
 $mysql_database = "database";
