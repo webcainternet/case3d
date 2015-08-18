@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://case3d.com.br/admin/');
-define('HTTP_CATALOG', 'http://case3d.com.br/');
+define('HTTP_SERVER', 'https://case3d.com.br/admin/');
+define('HTTP_CATALOG', 'https://case3d.com.br/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://case3d.com.br/admin/');
-define('HTTPS_CATALOG', 'http://case3d.com.br/');
+define('HTTPS_SERVER', 'https://case3d.com.br/admin/');
+define('HTTPS_CATALOG', 'https://case3d.com.br/');
 
 // DIR
 define('DIR_APPLICATION', '/srv/httpd/case3d.com.br/public/admin/');

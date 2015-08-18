@@ -13,3 +13,18 @@ VQModObject::parseMods - Could not resolve path for [catalog/model/payment/geren
 ----------------------------------------------------------------------
 
 
+---------- Date: 2014-12-18 19:41:26 ~ IP : 201.27.11.105 ----------
+REQUEST URI : /admin/
+MOD DETAILS:
+   modFile   : /srv/httpd/case3d.com.br/case3d/public/vqmod/xml/Felipo-Imagen-Pagamento-Entrega.xml
+   id        : Code Market - Imagem Pagamento e Entrega no Checkout
+   version   : 1.0.1
+   vqmver    : 2.3.2
+   author    : Felipo Antonoff Araújo
+VQModObject::parseMods - Could not resolve path for [catalog/model/payment/pagamento_digital.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/model/payment/akatus.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/model/payment/gerencianet.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
