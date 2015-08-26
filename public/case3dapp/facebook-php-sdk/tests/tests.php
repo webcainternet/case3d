@@ -262,7 +262,7 @@ class PHPSDKTestCase extends PHPUnit_Framework_TestCase {
     // fake the HPHP $_SERVER globals
     $_SERVER['HTTP_HOST'] = 'www.test.com';
     $_SERVER['REQUEST_URI'] = '/unit-tests.php';
-    $scope_params_as_array = array('email','sms','read_stream');
+    $scope_params_as_array = array('email','sms');
     $extra_params = array('scope' => $scope_params_as_array,
                           'nonsense' => 'nonsense');
     $login_url = parse_url($facebook->getLoginUrl($extra_params));
