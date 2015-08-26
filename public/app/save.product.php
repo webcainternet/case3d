@@ -121,7 +121,7 @@ if (isset($novoid)) {
 					  $idcsession = $idsession;
 
 					
-					header('Location: https://www.case3d.com.br/index.php?route=product/product&product_id='.$novoid);
+					header('Location: https://case3d.com.br/index.php?route=product/product&product_id='.$novoid);
 				}
 			}
 		}

@@ -84,7 +84,7 @@ else {*/
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "https://www.case3d.com.br/case3dapp/1/index2.php",
+	            url: "https://case3d.com.br/case3dapp/1/index2.php",
 	            async: false,
 	            success : function(text)
 	            {
@@ -104,7 +104,7 @@ else {*/
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "https://www.case3d.com.br/case3dapp/2/index.php?idalbum="+albumid,
+	            url: "https://case3d.com.br/case3dapp/2/index.php?idalbum="+albumid,
 	            async: false,
 	            success : function(text)
 	            {
@@ -131,7 +131,7 @@ else {*/
 
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "https://www.case3d.com.br/instagramcdapp/instagram/home2.php",
+	            url: "https://case3d.com.br/instagramcdapp/instagram/home2.php",
 	            async: false,
 	            success : function(text)
 	            {

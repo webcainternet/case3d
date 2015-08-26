@@ -17,7 +17,7 @@ ini_set("memory_limit","128M");
 
 
 	//Corrigir problema SSL
-	$gimagem = str_replace('https://www.case3d.com.br','http://www.case3d.com.br', $gimagem);
+	$gimagem = str_replace('https://case3d.com.br','http://case3d.com.br', $gimagem);
 	$gimagem = str_replace('https://case3d.com.br','http://case3d.com.br', $gimagem);
 
         //Recebe imagem do cliente
@@ -112,7 +112,7 @@ $sql_statement = "INSERT INTO  `case3d`.`cpi_capasconstrucao` (
 `ntop`
 )
 VALUES (
-'$gidcsession',  '$gmodelo',  '$glayout',  '$gposicao',  'https://www.case3d.com.br/app/$gimagem2',  '$qnheight',  '$qnwidth',  '$qnleft',  '$qntop'
+'$gidcsession',  '$gmodelo',  '$glayout',  '$gposicao',  'https://case3d.com.br/app/$gimagem2',  '$qnheight',  '$qnwidth',  '$qnleft',  '$qntop'
 )
 ";
 
@@ -123,7 +123,7 @@ if (!$result) {
 }
 else {
     ?>
-        <img src="https://www.case3d.com.br/app/<?php echo "$novoarq"; ?>.png">
+        <img src="https://case3d.com.br/app/<?php echo "$novoarq"; ?>.png">
 
 <?php } ?>
 
