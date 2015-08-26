@@ -119,6 +119,7 @@ else {
                 box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
                 font-size: 14px;
                 ">
+                <?php var_dump($photo); ?>
                 <?php echo "<img src='{$photo['source']}' "; ?>
                 id="drag<?php echo $ic; ?>" draggable="true"
                 ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
