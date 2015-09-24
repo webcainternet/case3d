@@ -30,7 +30,7 @@ if($o_user == 0)
  
     //Envia para a página de permissão do facebook, nela voce irá dar permissão ao aplicativo
     //acessar dados da sua conta
-    $url = $facebook->getLoginUrl(array('scope' => array('publish_stream','read_stream')));
+    $url = $facebook->getLoginUrl(array('scope' => array('publish_stream')));
     header("Location:".$url);
 }
 else
