@@ -77,7 +77,7 @@ if (isset($novoid)) {
 			`meta_keyword` ,
 			`tag`
 			)
-			VALUES ('".$novoid."',  '7',  '".$textoprod."',  'A capinha com a sua cara',  '',  '',  '')";
+			VALUES ('".$novoid."',  '8',  '".$textoprod."',  'A capinha com a sua cara',  '',  '',  '')";
 
 		$rquery2 = mysql_query($iquery2,$dblink);
 
