@@ -56,8 +56,8 @@ use MetzWeb\Instagram\Instagram;
 
 // initialize class
 $instagram = new Instagram(array(
-'apiKey'      => '8de0dedcca0f40618752cb632802949b',
-'apiSecret'   => 'a5b54552673047f793702a066d3e48fb',
+'apiKey'      => 'a108c7b6b05a44c39655cde2861564f6',
+'apiSecret'   => '209ab0bfc2054994ab65f4ab40af9ce8',
 'apiCallback' => 'https://case3d.com.br/instagramcdapp/instagram/success.php' // must point to success.php
 ));
 
