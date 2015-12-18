@@ -3158,7 +3158,7 @@ span.toggle {
 .banner>div {
 	position:relative;
 	overflow:hidden;
-	width:33.33333%;
+	width:25%;
 	float:left;
 	}
 aside .banner > div:hover img{

@@ -8,4 +8,5 @@ $_['text_welcome']       = 'Olá, visitante. Acesse sua <a href="%s">conta</a> o
 $_['text_logged']        = 'Você acessou como <a href="%s">%s</a> <b>(</b> <a href="%s">Sair</a> <b>)</b>';
 $_['text_account']       = 'Minha Conta';
 $_['text_checkout']      = 'Finalizar Pedido';
+$_['text_latest_added'] = 'Últimos adicionados';
 ?>
