@@ -37,7 +37,7 @@
 		</thead>
   
 		<tbody>
-		  <?php foreach ($products as $product) { var_dump($product); exit; ?>
+		  <?php foreach ($products as $product) { ?>
 
 
 			<?php if(!empty($product['recurring'])): ?>
@@ -50,11 +50,10 @@
             <?php endif; ?>
 		  <tr>
 			<?php if ($product['model'] == "Customizada") {
-				echo $product['key']; exit;
               $dblink = mysql_connect("127.0.0.1", "case3d", "c3d12qw12qwa");
               mysql_select_db("case3d",$dblink);
 
-              $result = mysql_query("select mpn from oc_product WHERE product_id = ".$product['key']);
+              $result = mysql_query("select mpn from oc_product WHERE product_id = ". str_replace(':', '', $product['key']));
 
               while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
                   $urlcapinha = $row["mpn"];
