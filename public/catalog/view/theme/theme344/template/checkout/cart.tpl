@@ -48,6 +48,7 @@
             <?php endif; ?>
 		  <tr>
 			<?php if ($product['model'] == "Customizada") {
+				echo $product['key']; exit;
               $dblink = mysql_connect("127.0.0.1", "case3d", "c3d12qw12qwa");
               mysql_select_db("case3d",$dblink);
 
