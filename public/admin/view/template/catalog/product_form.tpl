@@ -83,7 +83,7 @@
             </tr>
             <tr>
               <td><?php echo $entry_mpn; ?></td>
-              <td><input type="text" name="mpn" value="<?php echo $mpn; ?>" /></td>
+              <td><a href="/app/impressao/index.php?<?php echo $mpn; ?>" target="_blank">Ver capinha</a></td>
             </tr>
             <tr>
               <td><?php echo $entry_location; ?></td>
