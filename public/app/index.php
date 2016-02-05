@@ -267,12 +267,12 @@ else {*/
 						  <option value="0">-- Selecione --</option>
 						  <option value="0">Iphone 4/4S</option>
 						  <option value="1">Iphone 5/5S</option>
-						  <option value="7">Iphone 5C</option>
-						  <option value="2">Samsung Galaxy S3</option>
+						  <?php /* <option value="7">Iphone 5C</option> */ ?>
+						  <?php /* <option value="2">Samsung Galaxy S3</option> */ ?>
 						  <option value="3">Samsung Galaxy S4</option>
-						  <option value="4">Galaxy S5</option>
-						  <option value="5">Samsung Galaxy S3 Mini</option>
-						  <option value="6">Samsung Galaxy S4 Mini</option>
+						  <option value="4">Samsung Galaxy S5</option>
+						  <?php /* <option value="5">Samsung Galaxy S3 Mini</option> */ ?>
+						  <?php /* <option value="6">Samsung Galaxy S4 Mini</option> */ ?>
 						</select></center>
 				</div>
 
