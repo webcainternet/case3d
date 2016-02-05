@@ -37,7 +37,7 @@ $_['entry_upc']              = 'UPC:<br/><span class="help">Significa Código Un
 $_['entry_ean']              = 'EAN:<br/><span class="help">Significa Número de Artigo Europeu. É um código de identificação.</span>';
 $_['entry_jan']              = 'JAN:<br/><span class="help">Significa Número de Artigo Japonês. É um código de identificação.</span>';
 $_['entry_isbn']             = 'ISBN:<br/><span class="help">Significa Número Padrão Internacional de Livro. É o código de identificação utilizado em livros.</span>';
-$_['entry_mpn']              = 'MPN:<br/><span class="help">Significa Número da Peça do Fabricante. É o código usado pelos fabricantes para identificar os seus produtos.</span>';
+$_['entry_mpn']              = 'LINK:<br/><span class="help">Clique no link ao lado para impressão da capinha.</span>';
 $_['entry_location']         = 'Localização:<br/><span class="help">Localização do produto na loja ou armazém.</span>';
 $_['entry_shipping']         = 'Requer Envio:<br/><span class="help">O produto será enviado para o cliente?</span>'; 
 $_['entry_manufacturer']     = 'Fabricante:<br /><span class="help">Digite o nome do fabricante já cadastrado para selecioná-lo a partir do sistema de autocompletar.</span>';
