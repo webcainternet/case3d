@@ -37,7 +37,9 @@
 		</thead>
   
 		<tbody>
-		  <?php foreach ($products as $product) { ?>
+		  <?php foreach ($products as $product) { var_dump($product); exit; ?>
+
+
 			<?php if(!empty($product['recurring'])): ?>
               <tr>
                   <td colspan="6" style="border:none;"><image src="catalog/view/theme/theme344/image/reorder.png" alt="" title="" style="float:left;" /><span style="float:left;line-height:18px; margin-left:10px;"> 
