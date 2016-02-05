@@ -5,9 +5,6 @@
 	    float: left;
 		width: 50%;
 	}
-	.col-sm-3 {
-		float: right;
-	}
 </style>
 
 <?php echo $column_left; ?>
