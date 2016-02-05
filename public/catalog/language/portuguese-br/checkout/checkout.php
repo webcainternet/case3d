@@ -4,13 +4,13 @@ $_['heading_title']                  = 'Finalizar Compra';
 
 // Text
 $_['text_cart']                      = 'Meu Carrinho';
-$_['text_checkout_option']           = '1º Passo: Identificação';
-$_['text_checkout_account']          = '2º Passo: Conta e endereço para cobrança';
-$_['text_checkout_payment_address']  = '2º Passo: Endereço para cobrança';
-$_['text_checkout_shipping_address'] = '3º Passo: Endereço para entrega';
-$_['text_checkout_shipping_method']  = '4º Passo: Forma de entrega';
-$_['text_checkout_payment_method']   = '5º Passo: Forma de pagamento';
-$_['text_checkout_confirm']          = '6º Passo: Confirmar pedido';
+$_['text_checkout_option']           = 'Identificação';
+$_['text_checkout_account']          = 'Conta e endereço para cobrança';
+$_['text_checkout_payment_address']  = 'Endereço para cobrança';
+$_['text_checkout_shipping_address'] = 'Endereço para entrega';
+$_['text_checkout_shipping_method']  = 'Forma de entrega';
+$_['text_checkout_payment_method']   = 'Forma de pagamento';
+$_['text_checkout_confirm']          = 'Confirmar pedido';
 $_['text_modify']                    = 'Editar &raquo;';
 $_['text_new_customer']              = 'Novo cliente';
 $_['text_returning_customer']        = 'Já sou cliente';
