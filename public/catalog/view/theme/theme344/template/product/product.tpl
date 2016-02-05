@@ -549,7 +549,9 @@ $('#button-cart').bind('click', function() {
 				$('#cart').load('index.php?route=module/cart #cart > *');
 				$('html, body').animate({ scrollTop: 0 }, 'slow'); 
 			}	
-			setTimeout(function() {$('.success').fadeOut(1000)},3000)
+			setTimeout(function() {$('.success').fadeOut(1000)},3000);
+
+			window.location='index.php?route=checkout/cart';
 		}
 	});
 });
