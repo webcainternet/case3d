@@ -1,9 +1,12 @@
 <?php echo $header; ?>
 
 <style type="text/css">
-	.left, .col-sm-3 {
+	.left {
 	    float: left;
 		width: 50%;
+	}
+	.col-sm-3 {
+		float: right;
 	}
 </style>
 
