@@ -5,6 +5,14 @@
 	    float: left;
 		width: 50%;
 	}
+	.login-content .right, .login-content .left {
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 30px;
+    max-width: 537px;
+    margin: 10px;
+}
 </style>
 
 <?php echo $column_left; ?>
