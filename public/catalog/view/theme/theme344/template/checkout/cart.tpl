@@ -47,9 +47,27 @@
                 </tr>
             <?php endif; ?>
 		  <tr>
-			<td class="image"><?php if ($product['thumb']) { ?>
-			  <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
-			  <?php } ?></td>
+			<?php if ($product['model'] == "Customizada") {
+              $dblink = mysql_connect("127.0.0.1", "case3d", "c3d12qw12qwa");
+              mysql_select_db("case3d",$dblink);
+
+              $result = mysql_query("select mpn from sea_product WHERE product_id = ".$product['key']);
+
+              while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+                  $urlcapinha = $row["mpn"];
+              }
+
+              mysql_free_result($result);
+            ?>
+            <td class="image">
+            <iframe src="/app/carrinho/index.php?<?php echo $urlcapinha; ?>" style="border: 0px; width: 80px; height: 135px;" scrolling="no"></iframe>
+            </td>
+            <?php } else { ?>
+            <td class="image"><?php if ($product['thumb']) { ?>
+              <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
+              <?php } ?></td>
+            <?php } ?>
+            
 			<td class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
 			  <?php if (!$product['stock']) { ?>
 			  <span class="stock">***</span>
