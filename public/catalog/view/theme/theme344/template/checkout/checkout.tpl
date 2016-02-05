@@ -5,6 +5,9 @@
 	    float: left;
 		width: 50%;
 	}
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+	    float: right;
+	}
 </style>
 
 <?php echo $column_left; ?>
