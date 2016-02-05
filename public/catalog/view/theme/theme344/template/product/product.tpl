@@ -30,6 +30,35 @@
 	</div>
 	<?php } ?>
 
+
+
+
+    <?php //fmendes
+      $pos = strpos($heading_title, "apinha personalizada");
+      if ($pos == 1) { 
+            $dblink = mysql_connect("127.0.0.1", "case3d", "c3d12qw12qwa");
+              mysql_select_db("case3d",$dblink);
+
+              $result = mysql_query("select mpn from oc_product WHERE product_id = ".$_GET['product_id']);
+
+              while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+                  $urlcapinha = $row["mpn"];
+              }
+
+              mysql_free_result($result);
+            ?>
+            <div class="left" style="text-align: right;">
+              <iframe src="/app/product/index.php?<?php echo $urlcapinha; ?>" style="border: 0px; width: 330px; height: 570px;" scrolling="no"></iframe>
+            </div>        
+    <?php } ?>
+
+    
+
+
+
+
+
+
 		<?php if ($thumb || $images) { ?>
 		<div id="default_gallery" class="left spacing">
 			<?php if ($thumb) { ?>
